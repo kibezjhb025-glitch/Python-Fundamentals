@@ -9,7 +9,14 @@ In this exercise, you will use conditional statements to categorise people based
 # - If age is less than 18, print "You are a minor."
 # - If age is between 18 and 65 (inclusive), print "You are an adult."
 # - If age is 66 or higher, print "You are a senior citizen."
+user_age = int(input("How old are you? "))
 
+if user_age < 18:
+    print("You are a minor")
+elif 18  <= user_age <= 65 :
+    print("You are an adult")
+else:
+    print("You are a senior citizen")
 
 """
 Exercise: Loops
@@ -22,7 +29,19 @@ In this exercise, you will use a loop to print numbers up to a user-defined limi
 # Use a while loop to iterate from 1 to the user-defined limit (inclusive) and print each number.
 # Initialise a variable to start the loop
 
+limit = int(input("Enter a number as the limit: "))
+# limit_str = input("Enter number limit")
+# limit= int(limit_str)
 
+print("FOR LOOP")
+for i in range(1, limit +1 ):
+    print(i)
+
+print("WHILE LOOP")
+i = 1
+while i <= limit:
+    print(i)
+    i += 1
 """
 Exercise: Loop Control Statements
 In this exercise, you will use a loop and loop control statements to print odd numbers.
@@ -32,6 +51,14 @@ In this exercise, you will use a loop and loop control statements to print odd n
 # Convert the limit_str to an integer
 # 2. Use a for loop to iterate from 1 to the user-defined limit (inclusive).
 # 3. Inside the loop, use a loop control statement to skip even numbers and print odd numbers.
+
+num_limit_str = input("Enter a number as the limit")
+num_limit = int(num_limit_str)
+
+for i in range(1,num_limit + 1):
+    if i % 2 == 0:
+        continue
+    print(i)
 
 
 """
